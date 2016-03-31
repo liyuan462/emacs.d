@@ -8,4 +8,8 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
+;; projectile
+(require-package 'projectile)
+(projectile-global-mode)
+
 (provide 'init-local)
